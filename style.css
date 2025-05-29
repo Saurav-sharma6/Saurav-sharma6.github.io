@@ -374,65 +374,78 @@ input:checked + .slider:before {
 
         .contact-card-custom {
           background-color: #f9f9f9;
-          padding: 40px;
-          border-radius: 8px;
+          padding: 40px 30px;
+          border-radius: 12px;
           box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
           max-width: 500px;
-          margin: 0 auto;
-          text-align: center;
+          margin: 50px auto;
+          text-align: left;
           font-family: 'Inter', sans-serif;
-          margin-bottom: 100px;
-        }
-
-        .contact-card-custom:hover {
-          transform: translateY(-10px);
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
           transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         
-        .contact-card-custom a { margin: 10px;}
+        .contact-card-custom:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
         
         .contact-title {
           color: #306eff;
-          margin-bottom: 20px;
+          margin-bottom: 24px;
+          font-size: 1.5rem;
+          text-align: center;
         }
         
-        .contact-input,
-        .contact-textarea {
+        .contact-card-custom form label {
+          display: block;
+          margin-bottom: 16px;
+          font-size: 0.95rem;
+          color: #333;
+        }
+        
+        .contact-card-custom input,
+        .contact-card-custom textarea {
           width: 100%;
-          padding: 12px;
-          margin: 10px 0;
+          padding: 12px 14px;
+          margin-top: 6px;
           border: 1px solid #ccc;
-          border-radius: 4px;
-          font-size: 1em;
-          background-color: #f9f9f9;
+          border-radius: 6px;
+          font-size: 1rem;
+          background-color: #fff;
+          box-sizing: border-box;
+          resize: vertical;
         }
         
-        .contact-submit-btn {
+        .contact-card-custom button[type="submit"] {
           width: 100%;
           background-color: #306eff;
           color: white;
           padding: 12px;
-          font-size: 1em;
+          font-size: 1rem;
           border: none;
-          border-radius: 4px;
+          border-radius: 6px;
           cursor: pointer;
-          margin-top: 10px;
+          margin-top: 16px;
         }
         
-        .contact-submit-btn:hover {
+        .contact-card-custom button:hover {
           background-color: #1d56d8;
         }
         
         .contact-icons-wrap {
-          margin-top: 20px;
+          margin-top: 30px;
+          display: flex;
+          justify-content: center;
+          gap: 16px;
         }
         
-        .contact-icons-wrap .icon-link {
-          margin: 0 10px;
-          color: black;
-          text-decoration: none;
-          font-size: 24px;
+        .contact-icons-wrap a {
+          color: #333;
+          transition: transform 0.2s ease;
+        }
+        
+        .contact-icons-wrap a:hover {
+          transform: scale(1.2);
         }
         
         
