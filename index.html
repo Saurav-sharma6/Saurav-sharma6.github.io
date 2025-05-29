@@ -10,14 +10,51 @@
   </head>
   <body>
     <div class="container">
-      <div id="navbar">
-        <div class="toggle-switch" id="ts">
-          <label class="toggle-switch">
-            <input type="checkbox" />
-            <span class="slider"></span>
-          </label>
-        </div>
-      </div>
+<!-- 🌗 Dark Mode Toggle Button -->
+<div id="theme-toggle">
+  <button id="toggle-theme-btn">🌙</button>
+
+  <style>
+    #theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 999;
+    }
+
+    #toggle-theme-btn {
+      background: transparent;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    #toggle-theme-btn:hover {
+      transform: scale(1.2);
+    }
+
+    /* Example dark theme styles */
+    .dark-theme {
+      background-color: #121212;
+      color: #f1f1f1;
+    }
+
+    .dark-theme a {
+      color: #90cdf4;
+    }
+  </style>
+
+  <script>
+    const toggleBtn = document.getElementById("toggle-theme-btn");
+
+    toggleBtn.addEventListener("click", () => {
+      document.body.classList.toggle("dark-theme");
+      toggleBtn.textContent = document.body.classList.contains("dark-theme") ? "🌞" : "🌙";
+    });
+  </script>
+</div>
+
 
       <!-- Name section with photo and some links -->
       <div class="name">
