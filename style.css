@@ -381,7 +381,15 @@ input:checked + .slider:before {
           margin: 0 auto;
           text-align: center;
           font-family: 'Inter', sans-serif;
+          margin-bottom: 100px;
         }
+
+        .contact-card-custom:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
         .contact-card-custom a { margin: 10px;}
         
         .contact-title {
