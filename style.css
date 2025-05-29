@@ -312,7 +312,7 @@ input:checked + .slider:before {
 #sm-btn2,#sm-btn1{
           width: 120px;
           height: 50px;
-          border-radius: ;
+          border-radius:5px ;
 }
 
 
