@@ -309,6 +309,12 @@ input:checked + .slider:before {
   justify-content: center;
 }
 
+#sm-btn2,#sm-btn1{
+          width: 120px;
+          height: 50px;
+          border-radius: ;
+}
+
 
 
         .sandt {
@@ -447,8 +453,11 @@ input:checked + .slider:before {
         .contact-icons-wrap a:hover {
           transform: scale(1.2);
         }
+
         
-        
+  #card5{
+          width: 100px;
+  }      
 
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
