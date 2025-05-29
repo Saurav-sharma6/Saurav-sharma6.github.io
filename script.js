@@ -30,9 +30,9 @@ function createSparkle() {
 
   // Optional: Random animation duration
   sparkle.style.animationDuration = `${Math.random() * 2 + 1.5}s`;
-  sparkle.style.background = flag
-  ? "radial-gradient(circle, rgb(14, 14, 14), transparent)"
-  : "radial-gradient(circle, white, transparent)";
+    sparkle.style.background = flag
+    ? "radial-gradient(circle, rgb(14, 14, 14), transparent)"
+    : "radial-gradient(circle, white, transparent)";
 
   container.appendChild(sparkle);
 
@@ -44,3 +44,10 @@ function createSparkle() {
 
 // Create sparkles at an interval
 setInterval(createSparkle,70); // every 150ms
+
+const toggleBtn = document.getElementById("toggle-theme-btn");
+
+toggleBtn.addEventListener("click", () => {
+  document.body.classList.toggle("dark-theme");
+  toggleBtn.textContent = document.body.classList.contains("dark-theme") ? "🌞" : "🌙";
+});
