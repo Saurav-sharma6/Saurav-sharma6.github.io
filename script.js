@@ -18,7 +18,8 @@ toggle.addEventListener("click", () => {
 
 // Sparkling code
 
-const container = document.querySelector(".container");
+const container = document.body; // allow sparkles to animate across full screen
+
 
 function createSparkle() {
   const sparkle = document.createElement("div");

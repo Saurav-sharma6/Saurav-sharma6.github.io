@@ -81,6 +81,7 @@ input:checked + .slider:before {
   border-radius: 50%;
   opacity: 0.8;
   animation: floatSparkle 3s ease-in-out infinite;
+  z-index: 10;
 }
 
 @keyframes floatSparkle {
